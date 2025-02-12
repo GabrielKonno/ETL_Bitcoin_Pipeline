@@ -10,6 +10,32 @@ A solução combina extração de dados via API (ou Web Scraping, realizado apen
 - **Banco de Dados:** PostgreSQL, TinyDB
 - **ORM:** SQLAlchemy
 - **Dashboard:** Streamlit, Plotly
+  
+## Definição do Objetivo e Estrutura do Projeto
+
+### 1️⃣ Obter o preço do Bitcoin
+
+- via API da Coinbase (abordagem mais leve e eficiente).
+- via Web Scraping (Selenium no InfoMoney) (para comparação e aprendizado).
+
+### 2️⃣ Processar os dados
+
+- Converter os dados para um formato estruturado.
+- Adicionar timestamps e garantir consistência.
+
+### 3️⃣ Armazenar os dados
+
+- Primeiro, usaremos TinyDB (NoSQL leve) para testar a lógica.
+- Depois, migraremos para PostgreSQL com SQLAlchemy.
+
+### 4️⃣ Criar um Dashboard Interativo
+
+- Utilizando Streamlit para visualizar os dados coletados.
+- Exibir gráficos e estatísticas do preço do Bitcoin ao longo do tempo.
+
+### 5️⃣ Monitoramento e Logs
+
+- Possível implementação do Logfire para rastrear erros e desempenho.
 
 ## 📂 Estrutura do Repositório
 ```plaintext
